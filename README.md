@@ -34,6 +34,16 @@ replicaset.apps/mongodb-deployment-5d966bd9d6   1         1         1       9s
 - Get logs from a pod: kubectl logs pod/{pod_name}
 - Forward the requests from port 30000 to 8081 of the service: `kubectl port-forward service/mongo-express-service 30000:8081`
 - Delete all the deployments: `kubectl delete deployments --all`
+- Namespaces:
+  - group resources in namespaces
+    - databases
+    - monitoring
+    - Elastic stack
+    - Nginx-Ingress
+  - Use also to dev and prod stages
+  - Blue/Green deployment
+- Get namespaces: kubectl get namespace
+- Create namespaces: `kubectl create namespace k8-lso`
 
 ## Requirements
 
